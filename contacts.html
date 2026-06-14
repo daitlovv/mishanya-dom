@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Контакты — Гостевой дом «Мишаня»</title>
+<meta name="description" content="Контакты гостевого дома «Мишаня»: телефон +7 (968) 969-95-15, Telegram @daitlov. Рядом парк, лес, река Клязьма, магазины и рестораны.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow-sm);margin-bottom:24px}
+.ccard h2{font-size:1.4rem;margin-bottom:18px}
+.cline{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.cline:last-child{border-bottom:0}
+.cline .ic{width:46px;height:46px;border-radius:50%;background:var(--bg-soft);display:grid;place-items:center;color:var(--violet);font-size:1.2rem;flex:0 0 auto}
+.cline a{font-size:1.15rem;font-weight:700;color:var(--ink)}
+.cline small{display:block;color:var(--ink-soft);font-size:.82rem;font-weight:400}
+.maparea{aspect-ratio:4/3;border-radius:var(--radius)}
+.nearby{list-style:none}
+.nearby li{padding:11px 0;border-bottom:1px solid var(--line);color:var(--ink-soft);display:flex;justify-content:space-between;gap:12px}
+.nearby b{color:var(--ink)}
+</style>
+</head>
+<body data-page="contacts.html">
+<div id="site-header"></div>
+
+<section class="pagehead">
+  <div class="wrap"><h1>Контакты</h1><p>Дом находится в Ногинске, Подмосковье — до 5 км от города. Позвоните или напишите, поможем выбрать даты и всё согласовать.</p></div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="ccard">
+        <h2>Связаться с нами</h2>
+        <div class="cline">
+          <span class="ic">☎</span>
+          <div><a href="tel:+79689699515">+7 (968) 969-95-15</a><small>Звонки и WhatsApp</small></div>
+        </div>
+        <div class="cline">
+          <span class="ic">✈</span>
+          <div><a href="https://t.me/daitlov" target="_blank" rel="noopener">@daitlov</a><small>Telegram — удобнее всего для брони</small></div>
+        </div>
+      </div>
+      <div class="ccard">
+        <h2>Что рядом</h2>
+        <ul class="nearby">
+          <li><b>Парк</b><span>15 мин пешком / 5 на такси</span></li>
+          <li><b>Ресторан «Халиф»</b><span>5 мин пешком</span></li>
+          <li><b>«Дикси», «Пятёрочка», «Магнит»</b><span>рядом</span></li>
+          <li><b>«О’КЕЙ», «Лемана Про»</b><span>15 мин</span></li>
+          <li><b>Стадион</b><span>10 мин пешком</span></li>
+          <li><b>Лес и река Клязьма</b><span>15 мин</span></li>
+          <li><b>Ж/Д станция и автобус</b><span>рядом</span></li>
+          <li><b>Доставка еды</b><span>работает</span></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="maparea" style="overflow:hidden"><img src="img/house/exterior_04.webp" alt="Двор гостевого дома" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+      <div class="ccard" style="margin-top:24px">
+        <h2>Время заезда</h2>
+        <div class="cline"><span class="ic">→</span><div><b style="font-size:1.1rem">Заезд с 16:00</b><small>Выезд до 12:00</small></div></div>
+        <p style="color:var(--ink-soft);font-size:.9rem;margin-top:14px">Перед заселением подписывается договор, возраст основного гостя — от 25 лет.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-forest" style="text-align:center">
+  <div class="wrap">
+    <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px">Готовы выбрать даты?</h2>
+    <p style="color:#cdd6cd;margin-bottom:24px">Забронируйте онлайн с моментальным расчётом цены — или напишите нам.</p>
+    <a href="booking.html" class="btn btn--primary">Забронировать</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+</body>
+</html>

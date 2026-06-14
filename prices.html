@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Цены — Гостевой дом «Мишаня»</title>
+<meta name="description" content="Цены на гостевой дом «Мишаня»: пн-чт 18000 ₽, пт и вс 20000 ₽, сб 25000 ₽ за сутки до 6 гостей. Доплаты, депозит и дополнительные услуги — всё прозрачно.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.ptable-wrap{margin-bottom:40px}
+.ptable-wrap h2{font-size:1.5rem;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.ptable-wrap h2::before{content:"";width:8px;height:8px;background:var(--violet);border-radius:50%}
+.pnote{background:var(--bg-soft);border-left:3px solid var(--violet);padding:18px 22px;border-radius:var(--radius);color:var(--ink-soft);font-size:.92rem;margin-bottom:24px}
+.calc-cta{background:var(--violet-deep);color:#fff;border-radius:var(--radius);padding:36px;text-align:center;margin-top:20px}
+.calc-cta h3{color:#fff;font-size:1.6rem;margin-bottom:10px}
+.calc-cta p{color:#cdd6cd;margin-bottom:20px}
+</style>
+</head>
+<body data-page="prices.html">
+<div id="site-header"></div>
+
+<section class="pagehead">
+  <div class="wrap"><h1>Цены</h1><p>Всё прозрачно: тариф зависит от дня недели и считается за каждые сутки. Калькулятор на странице бронирования посчитает итог со всеми доплатами автоматически.</p></div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="ptable-wrap">
+      <h2>Проживание (до 6 гостей, за сутки)</h2>
+      <table class="ptable">
+        <tr><th>День недели</th><th style="text-align:right">Цена за сутки</th></tr>
+        <tr><td>Понедельник — четверг</td><td>18 000 ₽</td></tr>
+        <tr><td>Пятница</td><td>20 000 ₽</td></tr>
+        <tr><td>Суббота</td><td>25 000 ₽</td></tr>
+        <tr><td>Воскресенье</td><td>20 000 ₽</td></tr>
+      </table>
+      <p class="pnote">Цена указана за каждые сутки и включает до 6 платных гостей, баню и чан. Стоимость считается посуточно: например, пятница + суббота = 20 000 + 25 000 = 45 000 ₽.</p>
+    </div>
+
+    <div class="ptable-wrap">
+      <h2>Гости и дети</h2>
+      <table class="ptable">
+        <tr><th>Позиция</th><th style="text-align:right">Стоимость</th></tr>
+        <tr><td>Гость свыше 6 человек</td><td>1 000 ₽ / гость / сутки</td></tr>
+        <tr><td>Дети до 10 лет включительно</td><td>бесплатно</td></tr>
+        <tr><td>Дети старше 10 лет</td><td>как взрослый — 1 000 ₽ / сутки*</td></tr>
+      </table>
+      <p class="pnote">*Дети старше 10 лет считаются платными гостями. Доплата за «лишних» гостей начисляется только когда платных гостей становится больше 6. Дети до 10 лет в лимит не входят и не оплачиваются.</p>
+    </div>
+
+    <div class="ptable-wrap">
+      <h2>Дополнительные услуги</h2>
+      <table class="ptable">
+        <tr><th>Услуга</th><th style="text-align:right">Стоимость</th></tr>
+        <tr><td>Дрова — полдомика, на сутки хватает всем</td><td>2 000 ₽ / сутки</td></tr>
+        <tr><td>Набор в чан: ёлки, травы, апельсины</td><td>1 500 ₽</td></tr>
+        <tr><td>Веник для бани</td><td>500 ₽ / шт</td></tr>
+        <tr><td>Собака (по предварительной договорённости)</td><td>1 000 ₽</td></tr>
+      </table>
+      <p class="pnote">Дрова можно привезти свои. Животные — только по предварительной договорённости, заселяем не всех.</p>
+    </div>
+
+    <div class="ptable-wrap">
+      <h2>Депозит и предоплата</h2>
+      <table class="ptable">
+        <tr><th>Позиция</th><th style="text-align:right">Сумма</th></tr>
+        <tr><td>Предоплата при бронировании</td><td>10% от итога</td></tr>
+        <tr><td>Депозит за сохранность имущества</td><td>10 000 ₽ (возвратный)</td></tr>
+      </table>
+      <p class="pnote">Депозит возвращается на карту в течение нескольких часов после уборки дома. При возрасте основного гостя младше 25 лет залог увеличивается втрое. Если гостей приедет меньше заявленного — перерасчёт не делается.</p>
+    </div>
+
+    <div class="calc-cta">
+      <h3>Не хотите считать вручную?</h3>
+      <p>Калькулятор учтёт дни недели, гостей, детей и все доплаты за секунду.</p>
+      <a href="booking.html" class="btn btn--primary">Рассчитать стоимость</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Удобства — Гостевой дом «Мишаня»</title>
+<meta name="description" content="Что есть в гостевом доме «Мишаня»: банный чан, баня-бочка, бассейн, караоке, бильярд, джакузи, кровати «Аскона», тёплые полы. Всё для отдыха компанией.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.amen{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-bottom:64px}
+.amen:last-child{margin-bottom:0}
+.amen--flip .amen__txt{order:2}
+@media(max-width:860px){.amen{grid-template-columns:1fr;gap:20px}.amen--flip .amen__txt{order:0}}
+.amen h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:14px}
+.amen ul{list-style:none;margin-top:14px}
+.amen li{padding:9px 0 9px 26px;position:relative;color:var(--ink-soft);border-bottom:1px solid var(--line)}
+.amen li::before{content:"◆";position:absolute;left:0;color:var(--violet);font-size:.7rem;top:13px}
+.amen__img{aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden}
+.amen__img img{width:100%;height:100%;object-fit:cover;display:block}
+.floors{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:760px){.floors{grid-template-columns:1fr}}
+.floor{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+.floor h3{font-size:1.4rem;margin-bottom:12px;color:var(--violet-deep)}
+.floor p{color:var(--ink-soft);font-size:.95rem}
+.floor .tag{display:inline-block;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--violet);font-weight:700;margin-bottom:8px}
+.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+@media(max-width:860px){.detail-grid{grid-template-columns:1fr 1fr;gap:20px}}
+@media(max-width:560px){.detail-grid{grid-template-columns:1fr}}
+.detail-col{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:var(--shadow-sm)}
+.detail-col h3{font-size:1.2rem;font-weight:600;margin-bottom:14px;color:var(--violet-deep)}
+.detail-col ul{list-style:none}
+.detail-col li{padding:8px 0 8px 22px;position:relative;color:var(--ink-soft);font-size:.92rem;border-bottom:1px solid var(--line)}
+.detail-col li:last-child{border-bottom:0}
+.detail-col li::before{content:"✓";position:absolute;left:0;color:var(--violet);font-weight:700}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:760px){.specs{grid-template-columns:repeat(2,1fr)}}
+.spec{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;text-align:center}
+.spec__n{font-family:var(--font-display);font-size:1.7rem;font-weight:600;color:var(--violet-deep);line-height:1}
+.spec__l{color:var(--ink-soft);margin-top:6px;font-size:.85rem}
+</style>
+</head>
+<body data-page="amenities.html">
+<div id="site-header"></div>
+
+<section class="pagehead">
+  <div class="wrap"><h1>Удобства</h1><p>Всё для отдыха компанией и семейного праздника. В доме уже есть всё необходимое — привозить с собой ничего не нужно.</p></div>
+</section>
+
+<section class="section--tight bg-soft">
+  <div class="wrap">
+    <span class="eyebrow">Характеристики</span>
+    <h2 style="font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:28px;font-weight:600">Коротко о доме</h2>
+    <div class="specs">
+      <div class="spec"><div class="spec__n">180 м²</div><div class="spec__l">площадь дома</div></div>
+      <div class="spec"><div class="spec__n">2</div><div class="spec__l">этажа</div></div>
+      <div class="spec"><div class="spec__n">5</div><div class="spec__l">комнат</div></div>
+      <div class="spec"><div class="spec__n">10</div><div class="spec__l">спальных мест</div></div>
+      <div class="spec"><div class="spec__n">2</div><div class="spec__l">санузла</div></div>
+      <div class="spec"><div class="spec__n">5 сот.</div><div class="spec__l">участок</div></div>
+      <div class="spec"><div class="spec__n">6</div><div class="spec__l">парковочных мест</div></div>
+      <div class="spec"><div class="spec__n">2020</div><div class="spec__l">год постройки</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="amen reveal">
+      <div class="amen__txt">
+        <span class="eyebrow">Двор</span>
+        <h2>Баня, чан и бассейн</h2>
+        <p class="lead">Сердце двора — сибирский банный чан «Добрыня Никитич». Рядом баня-бочка, каркасный бассейн, мангал и зона очага.</p>
+        <ul>
+          <li>Банный чан «Добрыня Никитич» — включён в стоимость</li>
+          <li>Баня-бочка — включена в стоимость</li>
+          <li>Каркасный бассейн</li>
+          <li>Мангал и зона очага</li>
+          <li>Дрова для растопки — оплачиваются отдельно</li>
+        </ul>
+      </div>
+      <div class="amen__img"><img src="img/house/bath_03.webp" alt="Чан и баня" loading="lazy"></div>
+    </div>
+
+    <div class="amen amen--flip reveal">
+      <div class="amen__txt">
+        <span class="eyebrow">Для компании</span>
+        <h2>Развлечения в доме</h2>
+        <p class="lead">Скучать не придётся в любую погоду: от караоке до бильярда и музыкальных инструментов.</p>
+        <ul>
+          <li>Караоке-система</li>
+          <li>Настольный хоккей и настольный футбол</li>
+          <li>Небольшой бильярд</li>
+          <li>Пианино, ударная установка, гитара</li>
+          <li>Большой телевизор</li>
+        </ul>
+      </div>
+      <div class="amen__img"><img src="img/house/interior_22.webp" alt="Гостиная и бильярд" loading="lazy"></div>
+    </div>
+
+    <div class="amen reveal">
+      <div class="amen__txt">
+        <span class="eyebrow">Комфорт</span>
+        <h2>Сон и быт</h2>
+        <p class="lead">Все диваны и кровати «Аскона» с ортопедическими матрасами, тёплые полы во всём доме.</p>
+        <ul>
+          <li>Кровати и диваны «Аскона», ортопедические матрасы</li>
+          <li>Тёплые полы</li>
+          <li>Шлёпки, полотенца, банные простыни, шапки</li>
+          <li>Шампуни, гели, зубная паста</li>
+          <li>Санузел с джакузи и санузел с душем</li>
+        </ul>
+      </div>
+      <div class="amen__img"><img src="img/house/interior_00.webp" alt="Спальня с балдахином" loading="lazy"></div>
+    </div>
+
+    <div class="amen amen--flip reveal">
+      <div class="amen__txt">
+        <span class="eyebrow">Кухня и стол</span>
+        <h2>Готовим и празднуем</h2>
+        <p class="lead">К приезду накрываем праздничный стол на ваше количество гостей. Для детского праздника — отдельный красиво оформленный стол и фотозона.</p>
+        <ul>
+          <li>Большой стол, вся техника и посуда</li>
+          <li>Микроволновка, сервизы, кастрюли, сковороды</li>
+          <li>Чай, кофе, сахар</li>
+          <li>Праздничная сервировка к приезду (сообщите заранее)</li>
+          <li>Детский стол и фотозона для именинника</li>
+        </ul>
+        <p style="font-size:.85rem;color:var(--ink-soft);margin-top:12px">Духового шкафа временно нет.</p>
+      </div>
+      <div class="amen__img"><img src="img/house/feast_03.webp" alt="Накрытый праздничный стол" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft">
+  <div class="wrap">
+    <span class="eyebrow">Подробно</span>
+    <h2 style="font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:12px;font-weight:600">Что есть в доме</h2>
+    <p class="lead" style="margin-bottom:36px">Полный список — чтобы вы заранее знали, что брать с собой не нужно. А не нужно почти ничего.</p>
+    <div class="detail-grid">
+      <div class="detail-col reveal">
+        <h3>Спальные места</h3>
+        <ul>
+          <li>3 двуспальные кровати</li>
+          <li>2 дивана-кровати</li>
+          <li>1 двухъярусная кровать</li>
+          <li>1 односпальный диван</li>
+          <li>1 детская кровать</li>
+          <li>Матрасы «Аскона», ортопедические</li>
+        </ul>
+      </div>
+      <div class="detail-col reveal reveal-d1">
+        <h3>Кухня и техника</h3>
+        <ul>
+          <li>Холодильник, плита, микроволновка</li>
+          <li>Стиральная машина, водонагреватель</li>
+          <li>Большой обеденный стол</li>
+          <li>Тарелки, кастрюли, сковороды, бокалы</li>
+          <li>Сервизы для чая, приборы</li>
+          <li>Чай, кофе, сахар</li>
+        </ul>
+      </div>
+      <div class="detail-col reveal reveal-d2">
+        <h3>Ванные и удобства</h3>
+        <ul>
+          <li>2 совмещённых санузла внутри</li>
+          <li>Джакузи на первом этаже</li>
+          <li>Душ на втором этаже</li>
+          <li>Тёплые полы, газовое отопление</li>
+          <li>Полотенца, банные простыни, шапки, тапки</li>
+          <li>Шампуни, гели, фен, средства гигиены</li>
+        </ul>
+      </div>
+      <div class="detail-col reveal">
+        <h3>Развлечения</h3>
+        <ul>
+          <li>Караоке-система, музыкальная колонка</li>
+          <li>Бильярд</li>
+          <li>Настольный хоккей и футбол</li>
+          <li>Пианино, ударная установка, гитара</li>
+          <li>Телевизор, Wi-Fi</li>
+          <li>Большой аквариум и живые растения</li>
+        </ul>
+      </div>
+      <div class="detail-col reveal reveal-d1">
+        <h3>Двор</h3>
+        <ul>
+          <li>Банный чан «Добрыня Никитич»</li>
+          <li>Баня-бочка с предбанником</li>
+          <li>Каркасный бассейн (летний)</li>
+          <li>Мангал и зона очага</li>
+          <li>Терраса, садовая мебель</li>
+          <li>Парковка на 6 машин</li>
+        </ul>
+      </div>
+      <div class="detail-col reveal reveal-d2">
+        <h3>Для праздника</h3>
+        <ul>
+          <li>Сервировка стола к приезду (по договорённости)</li>
+          <li>Отдельный детский стол</li>
+          <li>Детская кроватка и стульчик</li>
+          <li>Фотозона для именинника</li>
+          <li>За два стола — до 20–25 человек</li>
+          <li>Атмосферный декор</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-2">
+  <div class="wrap">
+    <span class="eyebrow">Планировка</span>
+    <h2 style="font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:28px">Два этажа</h2>
+    <div class="floors">
+      <div class="floor reveal"><span class="tag">Первый этаж</span><h3>Гостиная и кухня</h3><p>Большой аквариум, множество растений, санузел с джакузи. Отдельная комната с двуспальной кроватью и шкафом. В гостиной — большой раскладной диван, телевизор, караоке, настольный хоккей и футбол. Кухня со всей техникой и посудой.</p></div>
+      <div class="floor reveal"><span class="tag">Второй этаж</span><h3>Спальни</h3><p>Три спальни и маленькая с двухъярусной кроватью, санузел с душем. Спальня с балдахином и двуспальной кроватью. Комната с раскладным диваном, пианино, барабанами и гитарой. Третья — с двуспальной кроватью и односпальным диванчиком. Небольшой бильярд.</p></div>
+    </div>
+    <p style="margin-top:24px;color:var(--ink-soft)">Вместимость: до 25 гостей на день, до 13–15 гостей с ночёвкой.</p>
+  </div>
+</section>
+
+<section class="section bg-forest" style="text-align:center">
+  <div class="wrap">
+    <h2 style="font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:16px">Посчитайте свой отдых</h2>
+    <p style="color:#cdd6cd;margin-bottom:24px">Выберите даты — и узнайте точную стоимость со всеми доплатами.</p>
+    <a href="booking.html" class="btn btn--primary">Перейти к бронированию</a>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/common.js"></script>
+</body>
+</html>
